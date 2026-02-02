@@ -8,12 +8,10 @@
   </head>
 
   <body>
-    <a href="#main-content">Skip to main content</a>
-
     <header>
-      <h1>Team Name</h1>
+      <h1><a href="index.html">Team Name</a></h1>
 
-      <nav aria-label="Primary">
+      <nav>
         <ul>
           <li><a href="athletes.html" aria-current="page">Athletes</a></li>
           <li><a href="meets.html">Meets</a></li>
@@ -21,8 +19,25 @@
       </nav>
     </header>
 
-    <main id="main-content">
+    <main>
       <h2>Athletes</h2>
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Search and sort</legend>
+
+          <label for="search">Search</label>
+          <input id="search" name="search" type="search" />
+
+          <label for="sort">Sort</label>
+          <select id="sort" name="sort">
+            <option value="name-asc">Athlete name (A–Z)</option>
+            <option value="name-desc">Athlete name (Z–A)</option>
+          </select>
+
+          <button type="submit">Apply</button>
+        </fieldset>
+      </form>
 
       <section>
         <table>

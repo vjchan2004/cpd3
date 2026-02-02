@@ -8,12 +8,10 @@
   </head>
 
   <body>
-    <a href="#main-content">Skip to main content</a>
-
     <header>
-      <h1>Team Name</h1>
+      <h1><a href="index.html">Team Name</a></h1>
 
-      <nav aria-label="Primary">
+      <nav>
         <ul>
           <li><a href="index.html">Athletes</a></li>
           <li><a href="meets.html">Meets</a></li>
@@ -21,36 +19,27 @@
       </nav>
     </header>
 
-    <main id="main-content">
-      <nav aria-label="Breadcrumb">
-        <ol>
-          <li><a href="index.html">Athletes</a></li>
-          <li><a href="athlete.html" aria-current="page">Athlete</a></li>
-        </ol>
-      </nav>
-
-      <h2>Athlete Name</h2>
-
-      <section aria-labelledby="overview-heading">
-        <h3 id="overview-heading">Overview</h3>
-
-        <section aria-labelledby="record-heading">
-          <h4 id="record-heading">Personal record</h4>
-          <p>16:42</p>
-        </section>
-
+    <main>
+      <section>
         <figure>
           <img src="images/profile.jpg" alt="Profile photo of Athlete Name" />
         </figure>
 
-        <section aria-labelledby="about-heading">
-          <h4 id="about-heading">About</h4>
+        <h2>Athlete Name</h2>
+
+        <section>
+          <h3>Personal record</h3>
+          <p>16:42</p>
+        </section>
+
+        <section>
+          <h3>About</h3>
           <p>About Athlete</p>
         </section>
       </section>
 
-      <section aria-labelledby="season-summary-heading">
-        <h3 id="season-summary-heading">Season summary</h3>
+      <section>
+        <h3>Season summary</h3>
 
         <p>Total meets: 8</p>
         <p>Best time: 16:42</p>
@@ -60,38 +49,39 @@
         </figure>
       </section>
 
-      <section aria-labelledby="career-results-heading">
-        <h3 id="career-results-heading">Career results</h3>
+      <section>
+        <h3>Career results</h3>
 
         <table>
           <thead>
             <tr>
               <th scope="col">Meet Name</th>
               <th scope="col">Date</th>
-              <th scope="col">Grade</th>
+              <th scope="col">Level</th>
               <th scope="col">Time</th>
               <th scope="col">Place</th>
             </tr>
           </thead>
+
           <tbody>
             <tr>
               <td>Early Season Invite</td>
               <td>2025-09-07</td>
-              <td>11</td>
+              <td>V</td>
               <td>17:10</td>
               <td>12</td>
             </tr>
             <tr>
               <td>County Championship</td>
               <td>2025-10-05</td>
-              <td>11</td>
+              <td>V</td>
               <td>16:42</td>
               <td>2</td>
             </tr>
             <tr>
               <td>Regional Finals</td>
               <td>2025-10-19</td>
-              <td>11</td>
+              <td>JV</td>
               <td>16:55</td>
               <td>5</td>
             </tr>
@@ -99,8 +89,8 @@
         </table>
       </section>
 
-      <section aria-labelledby="gallery-heading">
-        <h3 id="gallery-heading">Gallery</h3>
+      <section>
+        <h3>Gallery</h3>
 
         <ul>
           <li><img src="images/gallery-1.jpg" alt="Gallery image 1" /></li>
@@ -114,9 +104,5 @@
         </ul>
       </section>
     </main>
-
-    <footer>
-      <p>&copy; 2026 Team Name</p>
-    </footer>
   </body>
 </html>
