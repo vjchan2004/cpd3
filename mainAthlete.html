@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Team Name — Athletes</title>
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+
+  <body>
+    <a href="#main-content">Skip to main content</a>
+
+    <header>
+      <h1>Team Name</h1>
+
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Athletes</a></li>
+          <li><a href="meets.html">Meets</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <header>
+        <h2>Athletes</h2>
+      </header>
+
+      <section aria-labelledby="controls-heading">
+        <h3 id="controls-heading">Search and sort</h3>
+
+        <form action="#" method="get">
+          <fieldset>
+            <legend>Athlete list controls</legend>
+
+            <div>
+              <label for="search">Search athletes</label>
+              <input
+                id="search"
+                name="search"
+                type="search"
+                placeholder="Search..."
+                autocomplete="off"
+              />
+            </div>
+
+            <div>
+              <label for="sort">Sort</label>
+              <select id="sort" name="sort">
+                <option value="name-asc">Athlete name (A–Z)</option>
+                <option value="name-desc">Athlete name (Z–A)</option>
+                <option value="besttime-asc">Best time (fastest first)</option>
+                <option value="besttime-desc">Best time (slowest first)</option>
+                <option value="bestplace-asc">Best place (1st first)</option>
+                <option value="bestplace-desc">Best place (higher number first)</option>
+              </select>
+            </div>
+
+            <div>
+              <button type="submit">Apply</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <section aria-labelledby="table-heading">
+        <h3 id="table-heading">Athlete results</h3>
+
+        <p>
+          Showing <strong>5</strong> athletes. Use the search and sort controls to
+          refine the list.
+        </p>
+
+        <table>
+          <caption>
+            Athlete summary table including grade level, best time, and best placing.
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Grade</th>
+              <th scope="col">Athlete Name</th>
+              <th scope="col">Best Time</th>
+              <th scope="col">Best Place</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>11</td>
+              <td><a href="athlete.html">Jordan Lee</a></td>
+              <td>16:42</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td><a href="athlete.html">Avery Patel</a></td>
+              <td>17:05</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td><a href="athlete.html">Sam Nguyen</a></td>
+              <td>17:33</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td><a href="athlete.html">Taylor Chen</a></td>
+              <td>18:10</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td><a href="athlete.html">Riley Johnson</a></td>
+              <td>18:44</td>
+              <td>12</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Team Name</p>
+    </footer>
+  </body>
+</html>
