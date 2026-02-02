@@ -22,60 +22,33 @@
     </header>
 
     <main id="main-content">
-      <header>
-        <h2>Athletes</h2>
-      </header>
+      <h2>Athletes</h2>
 
-      <section aria-labelledby="controls-heading">
-        <h3 id="controls-heading">Search and sort</h3>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Search and sort</legend>
 
-        <form action="#" method="get">
-          <fieldset>
-            <legend>Athlete list controls</legend>
+          <div>
+            <label for="search">Search</label>
+            <input id="search" name="search" type="search" />
+          </div>
 
-            <div>
-              <label for="search">Search athletes</label>
-              <input
-                id="search"
-                name="search"
-                type="search"
-                placeholder="Search..."
-                autocomplete="off"
-              />
-            </div>
+          <div>
+            <label for="sort">Sort</label>
+            <select id="sort" name="sort">
+              <option value="name-asc">Athlete name (A–Z)</option>
+              <option value="name-desc">Athlete name (Z–A)</option>
+            </select>
+          </div>
 
-            <div>
-              <label for="sort">Sort</label>
-              <select id="sort" name="sort">
-                <option value="name-asc">Athlete name (A–Z)</option>
-                <option value="name-desc">Athlete name (Z–A)</option>
-                <option value="besttime-asc">Best time (fastest first)</option>
-                <option value="besttime-desc">Best time (slowest first)</option>
-                <option value="bestplace-asc">Best place (1st first)</option>
-                <option value="bestplace-desc">Best place (higher number first)</option>
-              </select>
-            </div>
+          <button type="submit">Apply</button>
+        </fieldset>
+      </form>
 
-            <div>
-              <button type="submit">Apply</button>
-            </div>
-          </fieldset>
-        </form>
-      </section>
-
-      <section aria-labelledby="table-heading">
-        <h3 id="table-heading">Athlete results</h3>
-
-        <p>
-          Showing <strong>5</strong> athletes. Use the search and sort controls to
-          refine the list.
-        </p>
+      <section aria-labelledby="results-heading">
+        <h3 id="results-heading">Results</h3>
 
         <table>
-          <caption>
-            Athlete summary table including grade level, best time, and best placing.
-          </caption>
-
           <thead>
             <tr>
               <th scope="col">Grade</th>
